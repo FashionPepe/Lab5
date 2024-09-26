@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(210, 255, 255);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color:rgb(37, 121, 159);
+    border-radius: 0 0 10px 10px;
+}
+footer{
+    position: absolute;
+    top: calc(100% - 60px);
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(7, 48, 66);
+    border-radius: 10px 10px 0 0 ;
+}
+#email{
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: "SUSE", sans-serif;
+}
+#links{
+    position: relative;
+    margin-left: 50%;
+    margin-top: 15px;
+}
+.link{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 20px;
+    font-family: "SUSE", sans-serif;
+    transition: all 500ms ease; 
+    background-color: rgb(156, 237, 255);
+}
+.link:hover{
+	box-shadow: inset 0 0 3px 3px rgb(93, 141, 152);
+    transition: all 500ms ease; 
+}
+#name{
+    position: absolute;
+    font-family: "SUSE", sans-serif;
+    font-size: 24px;
+    color: rgb(231, 244, 255);
+    top: -3px;
+    left:30px;
+    
+}
+form{
+    position: absolute;
+    top: 180px;
+    left: calc(50% - 225px);
+    background-color: rgb(94, 163, 197);
+    width: 450px;
+    height: 400px;
+    border-radius: 10px;
+    display:block;
+    font-family: "SUSE", sans-serif;
+}
+.text-field{
+    width: 300px;
+    height: 20px;
+    border-radius: 40px;
+    border: 1px solid rgb(93, 141, 152);
+    position: relative;
+    margin-top: 20px;
+   
+    padding: 3px
+}
+.warper{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+    margin-left: calc(50% - 150px);
+}
+.remember-warper{
+    position: relative;
+    margin-top: 20px;
+    
+}
+#head-name{
+    font-size: 34px;
+    color: rgb(30, 40, 62);
+    width: 450px;
+    text-align: center;
+}
+#submit{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(27, 46, 81);
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    color:  rgb(27, 46, 81);
+    transition: all 500ms ease; 
+    position: relative;
+    margin-top: 40px;
+    margin-left: calc(50% - 100px);
+}
+#submit:hover{
+    background-color: rgb(27, 46, 81);
+    color: white;
+    transition: all 500ms ease; 
+}
