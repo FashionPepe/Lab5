@@ -21,11 +21,11 @@
         
     </header>
     <main>
-        <form action="" class="form">
+        <form action="./login.php" method="post" class="form">
             <p id="head-name">Авторизация</p>
             <div class="warper">
-                <input id="login" type="text" class="text-field" placeholder="Логин">
-                <input id="pass" type="password" class="text-field" placeholder="Пароль">
+                <input id="login" type="text" class="text-field" placeholder="Логин" name="login">
+                <input id="pass" type="password" class="text-field" placeholder="Пароль" name="pass">
                 <div class="remember-warper">
                     <input id="remember" type="checkbox">
                     <label for="remember">Запомнить пароль</label>

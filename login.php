@@ -49,16 +49,14 @@
     <main>
         <div class="warper">
         <?php
-              echo '<p> Здравствуйте,'.$_GET['name'].'</p>'; //выводим ФИО
-              if ($_GET['select'] == 'propose'){ //проверяем тип обращения
-                     echo '<p>Спасибо за ваше предложение:</p>';
-                     echo '<textarea>'.$_GET['text'].'</textarea>';//вывод текста сообщения
+              if ($_POST['login'] == 'dima' and $_POST['pass'] == 'dima'){ //проверяем тип обращения
+                     echo '<p>Вход успешен</p>';
+                     
               }else{
-                     echo '<p>Мы рассмотрим Вашу жалобу:</p>';
-                     echo '<textarea>'.$_GET['text'].'</textarea>';
+                     echo '<p>Не удача</p>';
+                     
               }
-              if (isset($_GET['file']) & $_GET['file'] != '') echo '<p>Вы приложили следующий файл: '.$_GET['file'].'</p>';
-              echo '<a class="btn" href="index.php?name='.$_GET['name'].'&email='.$_GET['email'].'&select='.$_GET['select'].'&radio='.$_GET['radio'].'&check='.$_GET['check'].'&text='.$_GET['text'].'&file='.$_GET['file'].'">Заполнить снова</a>';
+              echo '<a class="btn" href="auth.php">Войти еще раз</a>';
             
         ?>
         </div>

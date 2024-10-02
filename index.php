@@ -1,4 +1,4 @@
 <?php
-    include 'appeal.html';
+    include 'appeal.php';
     
 ?>
