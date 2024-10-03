@@ -49,7 +49,13 @@
     <main>
         <div class="warper">
         <?php
-              if ($_POST['login'] == 'dima' and $_POST['pass'] == 'dima'){ //проверяем тип обращения
+            define('DB_HOST', 'std-mysql'); //Адрес
+            define('DB_USER', 'std_2707_lab5_data'); //Имя пользователя
+            define('DB_PASSWORD', 'epitih34'); //Пароль
+            define('DB_NAME', 'std_2707_lab5_data'); //Имя БД
+            $mysql = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
+            $result = mysqli_query($mysql, "SELECT * FROM users WHERE users.login = '".$_POST['login']."' AND users.password = '".$_POST['pass']."'");
+              if ($result->num_rows > 0){ //проверяем тип обращения
                      echo '<p>Вход успешен</p>';
                      
               }else{
